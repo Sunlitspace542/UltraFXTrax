@@ -1,0 +1,546 @@
+	global	p2_c0
+	global	car15,car16,car15b
+
+	global	car,car2,car3,car4,car5,car6,car7,car10,car11
+	global	wheel,wheel2,wheel3,Bwheel2,swheel2
+	global	carshadow
+	global	car7_c01,car7_c02,car7_c03,car7_c04,car7_c05,car7_c06,car7_c07,car7_c08
+
+	global	col_01,col_02,col_03,col_04,col_05,col_06,col_07,col_08,col_09,col_10,col_11
+	global	col_12,col_13,col_14,col_15
+
+	global	car1col
+	global	handshape,carscaleshp,scarscaleshp
+	
+	global	go_0,go_1,go_2,go_3,go_4,go_5,go_6
+
+
+	global	xyz
+	global	trk_1_2,rvl_3,rvl_4
+
+	deftrack	nullshape,0,0
+
+	deftrack	tree,30,30
+	deftrack	tyres,30,30
+	deftrack	sprshp1,30,30
+	deftrack	trk_1_1,30,30
+	deftrack	rvl_1,30,30
+
+
+	deftrack	db_1c,60,180,16
+	deftrack	db_2c,180,180,16
+	deftrack	wavec,60,120,9
+	deftrack	an_test,60,60
+	deftrack	b_testc,240,240
+	deftrack	hwayc,400,120
+	deftrack	f2c,240,240
+	deftrack	test1,120,120
+	deftrack	test,100,200
+	deftrack	test2,240,240
+	deftrack	test3,240,240
+
+	deftrack	testc,200,60
+	deftrack	bank_1c,120,180
+	deftrack	bank_2c,240,120
+
+	deftrack	bank_5c,120,180
+	deftrack	bank_6c,240,240
+	deftrack	bank_7,120,60
+	deftrack	bank_8c,240,240
+	deftrack	bank_9c,120,180
+
+	deftrack	slope,80,120
+	deftrack	slope3,80,240
+
+
+	deftrack	slope2,240,240
+
+
+	deftrack	t40_0,240,240
+	deftrack	t40_1,240,240
+	deftrack	t40_2,240,240
+	deftrack	hollow,240,240
+
+	deftrack	slope_1,60,240
+
+	deftrack	bank_1,120,240
+	deftrack	bank_2,240,240
+
+	deftrack	bank_3,240,240
+	deftrack	bank_4,240,240
+
+	deftrack	saka_5g,50,300,10
+	deftrack	saka_8,50,100,11	
+
+	deftrack	loop_1c,240,180	
+	deftrack	loop_2c,240,180	
+				    
+	deftrack	slo_22_1,80,80
+	deftrack	slo_22_2,80,80
+	deftrack	slo_22_3,80,80
+
+	deftrack	gut_1c,120,120
+	deftrack	gut_2c,120,120
+	deftrack	gut_3c,120,120,16
+
+
+;	deftrack	ga_00c,60,30
+;	deftrack	ga_01c,60,60
+;	deftrack	ga_02c,60,60
+;	deftrack	post_01c,30,30
+
+	deftrack	l2_0c,180,240
+	deftrack        l2_1c,180,240
+	deftrack	l2_2c,180,240
+	deftrack	L2_3C,120,240
+
+
+	deftrack	aj12_12c,60,120
+	deftrack	aj12_13c,60,120
+	deftrack	AJ21_12,60,120
+	deftrack	AJ21_13,60,120
+	deftrack	aj12_14c,60,120,9
+	deftrack	aj12_15c,60,120,9
+	deftrack	aj12_16c,60,120,10
+	deftrack	aj12_17c,60,120,10
+	deftrack	AJ21_14,60,120,9
+	deftrack	AJ21_15,60,120,9
+	deftrack	AJ21_16,60,120,10
+	deftrack	AJ21_17,60,120,10
+	deftrack	aj12_00c,120,60
+	deftrack	aj12_01c,120,60
+	deftrack	AJ21_00,120,60
+	deftrack	AJ21_01,120,60
+	deftrack	aj12_02c,120,60,9
+	deftrack	aj12_03c,120,60,9
+	deftrack	AJ21_02,120,60,9
+	deftrack	AJ21_03,120,60,9
+	deftrack	AJ21_04,120,60,10
+	deftrack	AJ21_05,120,60,10
+	deftrack	aj12_04c,120,60,10
+	deftrack	aj12_05c,120,60,10
+	deftrack	aj12_08c,180,60,9
+	deftrack	aj12_09c,180,60,9
+	deftrack	AJ21_08,180,60,9
+	deftrack	AJ21_09,180,60,9
+	deftrack	AJ21_10,180,60,10
+	deftrack	AJ21_11,180,60,10
+	deftrack	aj12_10c,180,60,10
+	deftrack	aj12_11c,180,60,10
+	deftrack	aj12_06c,180,60
+	deftrack	aj12_07c,180,60
+	deftrack	AJ21_06,180,60
+	deftrack	AJ21_07,180,60
+	deftrack	af11_14,60,120,12
+	deftrack	af11_17,60,120,12
+	deftrack	af11_08,180,60,12
+	deftrack	af11_11,180,60,12
+	deftrack	af10_00,60,60
+	deftrack	af11_00,60,60,12
+	deftrack	AF10_01,120,60
+	deftrack	AF10_02,120,60
+	deftrack	AF10_03,120,60
+	deftrack	AF10_04,120,60
+	deftrack	AF10_05,120,60
+	deftrack	AF10_06,120,60
+	deftrack	AF10_07,120,60
+	deftrack	AF10_09,120,60
+	deftrack	AF10_10,120,60
+	deftrack	AF10_12,120,60
+	deftrack	AF10_19,120,60
+	deftrack	AF10_20,120,60
+	deftrack	af11_01c,120,60,12
+	deftrack	af11_02,120,60,12
+	deftrack	af11_03,120,60,12
+	deftrack	af11_04c,120,60,12
+	deftrack	af11_05,120,60,12
+	deftrack	af11_06,120,60,12
+	deftrack	af11_07c,120,60,12
+	deftrack	af11_09c,120,60,12
+	deftrack	af11_10c,120,60,12
+	deftrack	af11_12c,120,60,12
+	deftrack	af11_19c,120,60,12
+	deftrack	af11_20c,120,60,12
+	deftrack	AF10_08,180,60
+	deftrack	AF10_11,180,60
+	deftrack	af10_14,60,120
+	deftrack	af10_17,60,120
+	deftrack	AF10_13,120,120
+	deftrack	AF10_15,120,120
+	deftrack	AF10_16,120,120
+	deftrack	AF10_18,120,120
+	deftrack	af11_13,120,120,12
+	deftrack	af11_15,120,120,12
+	deftrack	af11_16,120,120,12
+	deftrack	af11_18,120,120,12
+	deftrack	a211_00,60,60
+	deftrack	a211_01,60,60
+	deftrack	a212_00,60,60,10
+	deftrack	a212_01,60,60,10
+	deftrack	a212_02,120,60
+	deftrack	a213_00,120,60
+	deftrack	A211_03,120,60
+	deftrack	A212_03,120,60
+	deftrack	A213_01,120,60
+	deftrack	a211_04,120,60
+	deftrack	A211_05,120,60
+	deftrack	a211_02,120,60
+	deftrack	a211_14c,120,60,10
+	deftrack	a212_14,120,60,8
+	deftrack	a213_12,120,60,10
+	deftrack	a211_15c,120,60,10
+	deftrack	A212_15,120,60,8
+	deftrack	A213_13,120,60,10
+	deftrack	A212_05,120,60,9
+	deftrack	a211_17c,120,60,10
+	deftrack	a213_02,120,60,11
+	deftrack	a212_04,120,60,9
+	deftrack	a211_16c,120,60,10
+	deftrack	A213_03,120,60,11
+	deftrack	A211_06,180,60
+	deftrack	A212_06,180,60
+	deftrack	A213_04,180,60
+	deftrack	A211_07,180,60
+	deftrack	A212_07,180,60
+	deftrack	A213_05,180,60
+	deftrack	A211_08,180,60
+	deftrack	A211_09,180,60
+	deftrack	a211_18c,180,60,10
+	deftrack	A212_16,180,60,8
+	deftrack	A213_14,180,60,10
+	deftrack	a211_19c,180,60,10
+	deftrack	A212_17,180,60,8
+	deftrack	A213_15,180,60,10
+	deftrack	A213_06,180,60,11
+	deftrack	A212_08,180,60,9
+	deftrack	a211_20c,180,60,10
+	deftrack	A213_07,180,60,11
+	deftrack	A212_09,180,60,9
+	deftrack	a211_21c,180,60,10
+	deftrack	A211_10,60,120
+	deftrack	A212_10,60,120
+	deftrack	A213_08,60,120
+	deftrack	A211_11,60,120
+	deftrack	A212_11,60,120
+	deftrack	A213_09,60,120
+	deftrack	A211_12,60,120
+	deftrack	A211_13,60,120
+	deftrack	a211_22c,60,120,10
+	deftrack	A212_18,60,120,8
+	deftrack	A213_16,60,120,10
+	deftrack	a211_23c,60,120,10
+	deftrack	A212_19,60,120,8
+	deftrack	A213_17,60,120,10
+	deftrack	A213_10,60,120,11
+	deftrack	A212_12,60,120,9
+	deftrack	a211_24c,60,120,10
+	deftrack	A213_11,60,120,11
+	deftrack	A212_13,60,120,9
+	deftrack	a211_25c,60,120,10
+	deftrack	A112_00,60,60,11
+	deftrack	A112_01,60,60,11
+	deftrack	A111_00,60,60
+	deftrack	A111_01,60,60
+	deftrack	a111_14c,120,60,11
+	deftrack	A112_14,120,60,10
+	deftrack	A113_12,120,60,11
+	deftrack	a111_15c,120,60,11
+	deftrack	A112_15,120,60,10
+	deftrack	A113_13,120,60,11
+	deftrack	A113_02,120,60,12
+	deftrack	A112_04,120,60,11
+	deftrack	a111_16c,120,60,11
+	deftrack	A113_03,120,60,12
+	deftrack	A112_05,120,60,11
+	deftrack	a111_17c,120,60,11
+	deftrack	A111_02,120,60
+	deftrack	A112_02,120,60
+	deftrack	A113_00,120,60
+	deftrack	A111_03,120,60
+	deftrack	A112_03,120,60
+	deftrack	A113_01,120,60
+	deftrack	A111_04,120,60
+	deftrack	A111_05,120,60
+	deftrack	a111_18c,180,60,11
+	deftrack	A112_16,180,60,10
+	deftrack	A113_14,180,60,11
+	deftrack	a111_19c,180,60,11
+	deftrack	A112_17,180,60,10
+	deftrack	A113_15,180,60,11
+	deftrack	A113_06,180,60,12
+	deftrack	A112_08,180,60,11
+	deftrack	a111_20c,180,60,11
+	deftrack	A113_07,180,60,12
+	deftrack	A112_09,180,60,11
+	deftrack	a111_21c,180,60,11
+	deftrack	A111_06,180,60
+	deftrack	A112_06,180,60
+	deftrack	A113_04,180,60
+	deftrack	A111_07,180,60
+	deftrack	A112_07,180,60
+	deftrack	A113_05,180,60
+	deftrack	A111_08,180,60
+	deftrack	A111_09,180,60
+	deftrack	a111_22c,60,120,11
+	deftrack	A112_18,60,120,10
+	deftrack	A113_16,60,120,11
+	deftrack	a111_23c,60,120,11
+	deftrack	A112_19,60,120,10
+	deftrack	A113_17,60,120,11
+	deftrack	A113_10,60,120,12
+	deftrack	A112_12,60,120,11
+	deftrack	a111_24c,60,120,11
+	deftrack	A113_11,60,120,12
+	deftrack	A112_13,60,120,11
+	deftrack	a111_25c,60,120,11
+	deftrack	A111_10,60,120
+	deftrack	A112_10,60,120
+	deftrack	A113_08,60,120
+	deftrack	A111_11,60,120
+	deftrack	A112_11,60,120
+	deftrack	A113_09,60,120
+	deftrack	A111_12,60,120
+	deftrack	A111_13,60,120
+	deftrack	a121_02c,120,60
+	deftrack	a121_03c,120,60
+	deftrack	a121_04c,120,60
+	
+
+
+
+	deftrack	af10_21,120,120
+	deftrack	af11_21c,120,120,12
+	deftrack	af10_23,120,120
+	deftrack	af11_23c,120,120,12
+	deftrack	af10_22,120,120
+	deftrack	af11_22c,120,120,12
+	deftrack	af10_24,120,120
+	deftrack	af11_24c,120,120,12
+	deftrack	af10_25,180,180
+	deftrack	af11_25c,180,180,12
+	deftrack	af10_27,180,180
+	deftrack	af11_27c,180,180,12
+	deftrack	af10_26,180,180
+	deftrack	af11_26c,180,180,12
+	deftrack	af10_28,180,180
+	deftrack	af11_28c,180,180,12
+	deftrack	af10_29,120,240
+	deftrack	af11_29c,120,240,12
+	deftrack	af10_31,180,240
+	deftrack	af11_31c,180,240,12
+	deftrack	af10_30,120,240
+	deftrack	af11_30c,120,240,12
+	deftrack	af10_32,180,240
+	deftrack	af11_32c,180,240,12
+
+
+
+
+
+
+
+	deftrack	af20_00,120,60
+	deftrack	af21_00,120,60,12
+	deftrack	a121_00,120,60
+	deftrack	a122_00,120,60,11
+	deftrack	a122_01,120,60,11
+	deftrack	a121_01,120,60
+
+	deftrack	AUD2_00,120,60,2
+	deftrack	AUD2_01,120,60,2
+	deftrack	aud2_15c,120,60
+	deftrack	aud2_02c,120,60
+	deftrack	aud2_05c,120,60
+	deftrack	aud2_18c,120,60
+	deftrack	aud2_16c,120,60
+	deftrack	aud2_03c,120,60
+	deftrack	aud2_04c,120,60
+	deftrack	aud2_17c,120,60
+	deftrack	aud2_10c,120,60
+	deftrack	aud2_12c,120,60
+	deftrack	aud2_06c,120,60
+	deftrack	aud2_08c,120,60
+
+	deftrack	af21_07,120,60,12
+	deftrack	af20_01,180,60
+	deftrack	af21_01,180,60,12
+	deftrack	af20_03,180,180
+	deftrack	af21_03c,180,180,12
+	deftrack	af20_04,180,180
+	deftrack	af21_04c,180,180,12
+	deftrack	af20_02,180,60
+	deftrack	af21_02,180,60,12
+	deftrack	aud2_14c,120,60
+	deftrack	aud2_07c,120,60
+	deftrack	aud2_09c,120,60
+	deftrack	aud2_11c,120,60
+	deftrack	aud2_13c,120,60
+	deftrack	af20_05,180,180
+	deftrack	af21_05c,180,180,12
+	deftrack	af20_06,180,180
+	deftrack	af21_06c,180,180,12
+	deftrack	ac10_00,210,240
+	deftrack	ac11_00c,210,240,12
+	deftrack	ac10_01,180,120
+	deftrack	ac11_01c,180,120,12
+	deftrack	ac10_02,180,120
+	deftrack	ac11_02c,180,120,12
+	deftrack	ac10_03,180,60
+	deftrack	ac11_03c,180,60,12
+	deftrack	ac10_04,180,60
+	deftrack	ac11_04c,180,60,12
+	deftrack	ac10_05,180,180
+	deftrack	ac11_05c,180,180,12
+	deftrack	ac10_06,180,180
+	deftrack	ac11_06c,180,180,12
+	deftrack	ac10_07,120,180
+	deftrack	ac11_07c,120,180,12
+	deftrack	ac10_08,120,180
+	deftrack	ac11_08c,120,180,12
+	deftrack	ac10_09,120,180
+	deftrack	ac11_09c,120,180,12
+	deftrack	ac10_10,120,180
+	deftrack	ac11_10c,120,180,12
+	deftrack	ac10_11,180,180
+	deftrack	ac11_11c,180,180,12
+	deftrack	ac10_12,180,180
+	deftrack	ac11_12c,180,180,12
+	deftrack	ac10_13,180,180
+	deftrack	ac11_13c,180,180,12
+	deftrack	ac10_14,180,180
+	deftrack	ac11_14c,180,180,12
+	deftrack	ac10_15,210,180
+	deftrack	ac11_15c,210,180,12
+	deftrack	ac10_16,180,180
+	deftrack	ac11_16c,180,180,12
+	deftrack	ac10_17,120,120
+	deftrack	ac11_17c,120,120,12
+	deftrack	ac10_18,120,120
+	deftrack	ac11_18c,120,120,12
+	deftrack	ac10_19,120,180
+	deftrack	ac11_19c,120,180,12
+	deftrack	ac10_20,120,180
+	deftrack	ac11_20c,120,180,12
+	deftrack	af10_33,120,120
+	deftrack	af11_33c,120,120,12
+	deftrack	af10_34,120,120
+	deftrack	af11_34c,120,120,12
+	deftrack	af10_35,180,120
+	deftrack	af11_35c,180,120,12
+	deftrack	af10_36,180,120
+	deftrack	af11_36c,180,120,12
+	deftrack	af10_37,180,240
+	deftrack	af11_37c,180,240,12
+	deftrack	af10_38,180,240
+	deftrack	af11_38c,180,240,12
+
+
+	deftrack	bu_00,30,30
+	deftrack	bu_01c,60,60
+	deftrack	bu_02c,30,30
+	deftrack	post_00,30,30
+	deftrack	std_00c,60,180
+	deftrack	std_01c,60,180
+	deftrack	tre_00c,30,30
+	deftrack	hus_00c,60,60
+	deftrack	hus_01c,60,60
+	deftrack	ga_00c,150,0
+	deftrack	ga_01c,90,0
+	deftrack	stga_02,120,120
+	deftrack	stga_03,120,120,3
+	deftrack	stga_04,120,60
+	deftrack	stga_05,120,60,3
+	deftrack	ga_02c,90,60
+	deftrack	ga_03c,90,120
+	deftrack	cga_00c,150,60
+	deftrack	post_01c,30,30
+	deftrack	wall_03c,120,60
+	deftrack	wall_04c,60,60
+	deftrack	post_03c,30,30
+	deftrack	post_04c,30,30
+	deftrack	post_05c,30,30
+	deftrack	post_06c,30,30
+	deftrack	stb_00c,180,120
+	deftrack	stb_01c,180,60
+	deftrack	stb_02c,180,120
+	deftrack	wall_05,30,120
+	deftrack	wall_06,30,120
+	deftrack	null_00,60,60
+
+;************** CES 後のニューシェープです．(rshapes.asm)********
+	deftrack	mro_02c,150,120
+	deftrack	mro_01c,150,120
+	deftrack	mro_00,150,120
+	deftrack	mro_00c,300,120
+	deftrack	gd_00c,120,240
+	deftrack	gd_01c,120,240
+	deftrack	gd_02c,120,240
+	deftrack	gd_03c,120,240
+	deftrack	me_00c,120,60
+	deftrack	me_01c,240,180
+	deftrack	me_02c,240,180
+	deftrack	tek_00c,120,240
+	deftrack	tek_01c,120,60
+	deftrack	tek_02c,120,240
+	deftrack	wr_00c,120,60
+	deftrack	wl_00c,120,60
+	deftrack	sos30,120,120
+	deftrack	sos45,120,120
+	deftrack	stb_03c,180,60
+	deftrack	stb_04c,180,60,4
+	deftrack	stb_05c,180,60,5
+	deftrack	stb_06c,180,60,4
+	deftrack	stb_07c,180,60
+	deftrack	stb_08c,240,60,5
+	deftrack	stb_09c,240,60,5
+	deftrack	stb_10c,180,120,5
+	deftrack	stb_11c,180,120,5
+	deftrack	stb_12c,120,60,5
+	deftrack	stb_13c,120,60,5
+	deftrack	dan_00c,60,60
+	deftrack	dan_01c,60,60,5
+	deftrack	dan_03c,60,60
+	deftrack	dan_02c,60,60,5
+;******************************************************************
+
+	deftrack	stga_00,210,180
+	deftrack	stga_01,180,150,8
+	deftrack	stga_00l,210,180
+	deftrack	stga_00r,60,180
+	deftrack	tow_00c,30,30
+	deftrack	wall_00c,90,30
+	deftrack	ctw_c,30,30
+	deftrack	stno,90,0
+	deftrack	redstno,90,0
+	deftrack	wall_01c,60,30
+	deftrack	a212_20,60,60,10
+	deftrack	a112_20,60,60,11
+	deftrack	af11_39,60,60,12
+	deftrack	ga_04c,60,0
+	deftrack	li_00c,180,30
+	deftrack	li_01c,180,30
+	deftrack	stx_00,180,120
+	deftrack	stx_01,240,120
+	deftrack	stx_02,240,60
+	deftrack	stx_03,180,120
+	deftrack	stx_04,120,120
+	deftrack	stx_05,120,60
+	deftrack	post_02c,30,30
+	deftrack	wall_02c,120,60
+
+
+	
+	deftrack	aw10_00c,60,60
+	deftrack	aw10_01c,60,60
+	deftrack	aw10_02c,60,60
+
+
+
+
+
+
+
+
+
+
+

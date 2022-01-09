@@ -1,0 +1,18 @@
+;--------------------------------------------------------------------
+;
+;		External file <xlirq>
+;
+;				programed by Masato Kimura
+;
+;				05/02/1993
+;--------------------------------------------------------------------
+;
+;
+	global	irq_routin
+	global	transfer_sprite
+	global	transfer_sprite_l
+	global	transfer_bitmap
+	global	transfer_color
+	global	transfer_color_l
+
+

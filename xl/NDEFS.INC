@@ -1,0 +1,15 @@
+	deftrack	AF10_00,60,60
+	deftrack	A211_00,60,90
+	deftrack	A211_01,60,90
+	deftrack	AF11_00,60,240,12
+	deftrack	A212_00,60,240,10
+	deftrack	A212_01,60,240,10
+	deftrack	A212_02,120,150
+	deftrack	A213_00,120,120
+	deftrack	A211_04,120,120
+	deftrack	A211_02,120,120
+	deftrack	AF11_01C,120,240,12
+	deftrack	AF11_02,120,240,12
+	deftrack	AF11_04C,120,240,12
+	deftrack	AF11_07C,120,240,12
+	deftrack	AF11_09C,120,240,12

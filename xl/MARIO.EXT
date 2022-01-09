@@ -1,0 +1,114 @@
+	global	oopspal,oopschr,oopspic
+	global	m_numshapes,mdo_3d_display,m_dotsorstars
+	global	mclrbitmaps2,mclrbitmaps3,m_viewposx
+	global	m_y1
+	global	m_damage,m_boostcnt
+	global	m_boostanim,m_rotx,m_bigx,m_bigy
+	global	m_clrbitmaps
+	global	m_x1,m_z1,m_xp1
+	global	mwmatrotp16,m_bigz
+	global	m_drawlist,m_enddatabnk,m_enddata,m_bossmaxhp
+	global	m_viewposy,mvanishx,mvanishy,mcallarctan16
+	global	m_cnt
+;	global	m_lxpos,m_lypos,m_lzpos,mspr_pal,m_radius
+	global	m_roty,m_depthstab,m_scale
+	global	msprite,m_rotz,m_xc
+	global	m_yc,m_decoffset
+	global	mdecclear,m_xleft,m_xright,m_ytop,m_ybot
+	global	m_debugchars,mcrotwmatzxy16
+	global	m_wmat11,m_wmat12,m_wmat13
+	global	m_wmat21,m_wmat22,m_wmat23
+	global	m_wmat31,m_wmat32,m_wmat33
+	global	m_depthtable,mdecrunch,m_decaddr
+	global	m_vanishx,m_vanishy,m_shapebank
+	global	m_expcnt,m_shift,m_colourptr
+	global	m_framenum,m_colframe,m_pntptr,m_faceptr
+	global	mshowobj,m_pxx,m_pxy,m_pxz
+	global	m_pzx,m_pzy,m_pzz,m_gridx,m_gridz
+	global	minitdust,m_viewposz
+	global	m_bosshp,m_pfm,m_shapeptr
+	global	mshowobj3,mcopyface,mshowdust2
+	global	m_xp2,m_x2
+;	global	m_particlerand
+	global	m_rand,m_depthoffset
+	global	m_sprsize,m_sprxscale,musprite,m_meters
+	global	m_shadowheight
+	global	m_textcolour
+	global	m_planetstars,m_particlesON,m_defaultID
+	global	mallrotzsort,mdrawsprite32
+	global	marctan16
+
+
+	ifne	mario_stats3d
+	global	m_shapes_notdrawn
+	global	m_polys_drawn
+	global	m_lines_drawn
+	global	m_points_done
+	global	m_visis_done
+	global	m_polys_clip2d
+	global	m_polys_clip3d
+	endc
+
+
+	global	testk
+	global	testk2
+	global	testk3
+	global	testk4
+	global	m_sineoffset
+	global	m_scrollxoff
+	global	mclrmapscreen
+	global	mclrpepperscreen
+ 	
+;	global	m_carusedlist,m_carblocks,m_carfreelist
+;	global	m_wheelusedlist,m_wheelblocks,m_wheelfreelist
+;	global	m_tobjusedlist,m_tobjblocks,m_tobjfreelist
+
+	global	minit_dynamics
+	global	mdo_dynamics
+	global	mmake_tobj,mmake_roadobj
+	global	mrem_obj_snes,mmake_handobj
+
+	global	m_TORQUEx,m_forcex
+	global	m_TORQUEy,m_forcey
+	global	m_TORQUEz,m_forcez
+	global	m_t4,m_t5,m_t6
+
+	global	m_DISPx
+	global	m_DISPy
+	global	m_DISPz
+	global	m_test1,m_enginex,m_enginez,m_test2
+	global	m_frictdispx,m_frictdispy,m_frictdispz
+	global	m_dynvar1,m_dynvar2,m_dynvar3
+
+	global	mmake_car,mmake_markobj,mmake_expobj
+	global	cartype_blocky,cartype_dragster,cartype_fzero
+	global	cartype_pickup1,cartype_pickup2,cartype_pickup3
+	global	cartype_ant
+	global	cartype_truck
+
+
+	global	m_mariokey,m_indynamics,m_testcar1
+	global	m_wheelgndoff
+
+	global	m_dynmem,m_objects
+
+	global	m_groupblocks
+	global	m_framec
+	
+	global	wheel_defs
+
+	global	m_particlerand
+
+;	global	ztab,maxztab
+;,partfadetab,particle_circle	
+
+
+	global	rtest1
+	global	rtest2
+	global	rtest3
+	global	rtest4
+	global	rtest5
+
+
+
+

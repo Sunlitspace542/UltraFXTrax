@@ -1,0 +1,145 @@
+STDFILES= HEADER.INC MACROS.INC VARS.INC SOUNDEQU.INC STRUCTS.INC ALCS.INC \
+ GILESALX.INC GILESALC.INC GILESAL.INC KALCS.INC DALCS.INC MDYNMACS.MC DYNSTRUC.INC
+STRATFILES= STRATMAC.INC STRATLIB.INC STRATEQU.INC SHMACS.INC STRATHDR.INC WEAPONS.INC
+ASM=sasmx
+ASMFLAGS=-efilelist=0 -xsymbols.txt
+include symson.mak
+LINK=ARGLINK
+LOPTS=-b30 -h512 -t7d
+ANSI=
+
+ALLFILES= bank0.sob bank1.sob bank2.sob \
+ bank4.sob bank5.sob bank6.sob bank7.sob \
+ bank8.sob bank9.sob bank10.sob \
+ bank11.sob shbanks.sob incbins.sob
+
+.asm.sob:
+	@$(ASM) -m30 $(ANSI) $(SYMSON) $(ASMFLAGS) $< -v$*.SOB
+
+all: xl.rom
+
+
+finished.sg: $(ALLFILES)
+	@$(LINK) $(LOPTS) -d @flist
+
+xl.rom: $(ALLFILES)
+	@$(LINK) $(LOPTS) -oxl.rom @flist
+
+info: $(ALLFILES)
+	@$(LINK) $(LOPTS) -l1024 @flist
+
+## Bank 0
+bank0.sob: bank0.asm $(STRATFILES) \
+$(STDFILES) mdynmacs.mc dynstruct.inc blink.asm \
+data\etabs.dat sgtabs.asm data\nintendo.pal data\map-obj.cgx \
+sgdata.asm data\arctan.asm istrats.asm shapes.asm \
+shapes2.asm ashapes.asm a2shapes.asm afshapes.asm \
+af2shapes.asm a1shapes.asm ajshapes.asm aushapes.asm \
+acshapes.asm rshapes.asm rshapes2.asm awshapes.asm \
+data\and.pcr 
+
+
+## Bank 1
+bank1.sob: bank1.asm shmacs.inc gamemsgs.inc dynparms.inc\
+$(STDFILES) mdynmacs.mc dynstruc.inc dynparms.inc \
+mvars.mc mmacs.mc mshtab.mc mmaths.mc \
+mwrot.mc mwcrot.mc mobj.mc mclip.mc \
+mdrawc.mc mdrawp.mc msprite.mc mgdots.mc \
+mdrawlis.mc mdecru.mc mdsprite.mc mpart.mc \
+mdynamic.mc mai.mc 
+
+## Bank 2, 3
+bank2.sob: bank2.asm bgmacs.inc\
+$(STDFILES) mdynmacs.mc dynstruct.inc xlirq.asm \
+hdmatabs.asm ramstuff.asm data\gfx\mist.col data\gfx\bg2-c.col \
+data\gfx\bg2-c.col data\gfx\over_d.col xlmain.asm xltrans.asm \
+game.asm windows.asm defspr.asm data\gfx\night.col \
+data\gfx\red.col data\gfx\blue.col coltab.asm light.asm \
+coltabs.asm bgs.asm sound.asm obj.asm \
+sprites.asm mother.asm world.asm debug.asm \
+stratrou.asm draw.asm endseq.asm data\f-1.pcr \
+cont.asm 
+
+
+## Bank 4
+bank4.sob: bank4.asm \
+$(STDFILES) $(STRATFILES) 
+
+## Bank 5, bank 13
+bank5.sob: bank5.asm mapmacs.inc istrats.asm \
+$(STDFILES) mdynmacs.mc dynstruct.inc maps\test1.asm \
+maps\test2.asm maps\test3.asm maps\test4.asm maps\maplist.asm \
+data\and.ccr maps\MAPP.asm maps\maplist2.asm 
+
+## Bank 6
+bank6.sob: bank6.asm \
+$(STDFILES) $(STRATFILES) gstrats.asm mmacs.mc \
+mhofs.mc 
+
+## Bank 7
+bank7.sob: bank7.asm  \
+$(STDFILES) $(STRATFILES) xldata\font.bmp xlstart.asm \
+xltitle.asm xlinit.asm xlsound.asm xlmes.asm \
+mmacs.mc mmessage.mc xldata\title.pcg \
+xldata\title.pco xldata\title.psc xldata\game.pco xldata\game2.pco \
+xldata\game3.pco xldata\game4.pco xldata\obj.pcg xldata\bgpanel.pcg \
+xldata\back1.pcg xldata\back1.psc 
+
+## Bank 8
+bank8.sob: bank8.asm \
+$(STDFILES) $(STRATFILES) gastrats.asm snd\sgbgmd.bin \
+
+## Bank 9
+bank9.sob: bank9.asm \
+$(STDFILES) snd\sgbgm11.bin 
+
+## Bank 10
+bank10.sob: bank10.asm \
+$(STDFILES) $(STRATFILES) snd\sgbgml.bin 
+
+## Bank 11
+bank11.sob: bank11.asm \
+$(STDFILES) $(STRATFILES) pstrats.asm 
+
+## Banks 12, 13, 14, 15, 16, 17, 22
+shbanks.sob: shbanks.asm shmacs.inc stratequ.inc \
+$(STDFILES) mdynmacs.mc dynstructs.inc shapes.asm \
+rshapes.asm ashapes.asm snd\sgbgmm.bin a2shapes.asm \
+rshapes2.asm data\m.pcr snd\sgbgm2.bin afshapes.asm \
+snd\sgbgmn.bin a1shapes.asm awshapes.asm shapes2.asm \
+snd\sgbgmj.bin ajshapes.asm aushapes.asm af2shapes.asm \
+data\dog.ccr snd\sgbgm7.bin snd\sgbgm3.bin acshapes.asm \
+
+## Banks 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31
+incbins.sob: incbins.asm \
+$(STDFILES) msprites\sprites1.dat msprites\sprites2.dat data\moji_2.fon \
+mdata.mc data\demo.ccr data\demo.pcr data\hole-a.ccr \
+data\b.ccr data\b.pcr data\obj-1.ccr data\e-test.ccr \
+data\e-test.pcr data\e-test2.ccr data\e-test2.pcr data\fox.ccr \
+data\fox.pcr data\b-m.ccr data\st-p.ccr data\2-3h.pcr \
+data\st-p.pcr data\2-2.ccr data\2-3.ccr data\2-3b.ccr \
+data\stars.ccr data\1-3-b.ccr data\space.ccr data\last.pcr \
+data\3-2.ccr data\fs-bg3.ccr data\3-3.ccr data\map.ccr \
+data\fs-ni.pcr data\t-ss.pcr data\3-4.ccr data\dog.pcr \
+data\cp.pcr data\t-st.ccr data\t-sp.ccr data\c-m.ccr \
+data\ti-3.ccr data\ti-3.pcr data\cont.ccr data\cont.pcr \
+data\cont-2.ccr data\cont-2.pcr data\ti-3-us.pcr data\ti-3-us.ccr \
+data\2-4.ccr data\cp.ccr data\face.cgx data\gfx\allcols.pac \
+data\m.ccr xlsnd\xlsnd0.bin snd\sgsound6.bin snd\sgsound6.bin \
+snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin \
+snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin \
+snd\sgsound6.bin snd\sgbgma.bin snd\sgbgmb.bin snd\sgbgmc.bin \
+snd\sgbgmo.bin snd\sgbgme.bin snd\sgbgmf.bin snd\sgbgmg.bin \
+snd\sgbgmh.bin snd\sgbgmi.bin snd\sgbgmk.bin snd\sgbgmp.bin \
+snd\sgbgm1.bin snd\sgbgm4.bin snd\sgbgm5.bin snd\sgbgm6.bin \
+snd\sgbgm8.bin snd\sgbgm9.bin snd\sgbgm10.bin data\obj-2.ccr \
+data\obj-3.ccr data\gfx\bg2-a.col data\gfx\bg2-b.col data\gfx\bg2-c.col \
+data\gfx\bg2-d.col data\gfx\bg2-e.col data\gfx\bg2-f.col data\gfx\bg2-g.col \
+data\gfx\t-m.col data\gfx\t-m-2.col data\gfx\t-m-3.col data\gfx\t-m-4.col \
+data\gfx\b-m.col data\gfx\light.col data\gfx\space.col data\gfx\stars.col \
+data\gfx\cp.col data\gfx\cp-us.col data\gfx\hole.col data\gfx\l.col \
+data\gfx\e-test0.col data\gfx\e-test.col data\gfx\obj-1.col 
+
+
+
+

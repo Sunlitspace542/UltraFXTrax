@@ -1,0 +1,16 @@
+
+	global	apu_initialize
+	global	call_sound0,call_sound1
+ 	global	clear_sound
+	global	engine_sound
+
+	global	call_skidend
+	global	call_skid01,call_skid02
+	global	call_skid03,call_skid04
+
+	global	dart_on,dart_off
+	global	brake_on,brake_off
+
+	global	nomal_engine_call
+	global	core_engine_call
+	global	tunnel_engine_call

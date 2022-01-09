@@ -1,0 +1,29 @@
+	global	default_c,depthtables,depthtabs
+	global	red_c,id_1_c,textureaddrtab,white_c
+	global	shadestab2_0,shadestab2_1,shadestab2_2,shadestab2_3
+	global	texturexytab,id_0_c,id_2_c,id_3_c
+	global	night,night1,mist,mist1,desert,desert1,marine,marine1
+	global	cornflakes_c
+
+	global	burnmark_c,fire_c,ringlaser_c,fireball_c,ironball_c
+	global	smoke_c,splash_c,ballandchain_c,specialweapon_c
+	global	asteroid_c,asteroid2_c,id_5_c,flash_c,explode_c
+	global	explode2_c,explode3_c,pexplod2s_c,starwars_c
+	global	spark_c,lfdie_c,line_c,bullet_c,ebullet_c
+	global	normal_c,bouncyball_c,egg_c,black_c,BRITENORMAL_C
+
+	global	depth_normal,break_meteor_C
+	global	scrapmetal_c,depth_stage1
+
+	global	blue1_c,blue2_c,blue3_c
+	global	boost_c,playerbeam_c
+	global	wheel1_c,wheelball_c
+	global	hand_c
+
+	global	treestump_c,treetop_c
+	global	redtyres_c,whitetyres_c
+	global	whitepuff_c,brownpuff_c
+	global	bush1_c,eyes1_c
+
+	global	texturepaltab
+

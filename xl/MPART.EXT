@@ -1,0 +1,3 @@
+	global	mupdate_particles
+	global	mmake_particles
+	global	mshow_particles

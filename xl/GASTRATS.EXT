@@ -1,0 +1,16 @@
+	global	car1_Istrat,gnd_Istrat,gndobj_Istrat
+	global	stratdebug_print_l
+	global	gndanim_Istrat,gndanimup_Istrat,gndanimdown_Istrat,gndanimbounce_Istrat
+	global	car2_Istrat,car3_Istrat
+	global	markobj_Istrat
+	global	spin1_Istrat
+	global	spin2_Istrat
+	global	spin3_Istrat
+	global	spin4_Istrat
+	global	tree_Istrat
+	global	gate_Istrat
+	global	whitetyres_Istrat,redtyres_Istrat
+	global	bush1_Istrat,truck1_Istrat
+	global	objcar1_Istrat
+
+

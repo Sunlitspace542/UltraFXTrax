@@ -1,0 +1,13 @@
+
+
+	global	mputfont
+ 	global	ms_1,ms_2,ms_3,ms_go
+	global	ms_laptime
+	global	ms_listlap1,ms_listlap2
+	global	ms_course1,ms_course2
+	global	ms_course3,ms_course4
+	global	ms_2laps2go
+	global	ms_trynextcourse,ms_welldone
+	global	ms_deccount1,ms_deccount2,ms_timeup
+	global	dispramb,dispramw
+	

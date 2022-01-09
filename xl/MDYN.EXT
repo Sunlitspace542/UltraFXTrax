@@ -1,0 +1,30 @@
+	global	minit_dynamics
+	global	mdo_dynamics
+	global	mmake_tobj,mmake_roadobj
+	global	mrem_obj_snes,mmake_handobj
+
+	global	m_TORQUEx,m_forcex
+	global	m_TORQUEy,m_forcey
+	global	m_TORQUEz,m_forcez
+	global	m_t4,m_t5,m_t6
+
+	global	m_DISPx
+	global	m_DISPy
+	global	m_DISPz
+	global	m_test1,m_enginex,m_enginez
+	global	m_frictdispx,m_frictdispy,m_frictdispz
+	global	m_dynvar1,m_dynvar2,m_dynvar3
+
+	global	mmake_car,mmake_markobj,mmake_expobj
+	global	cartype_blocky,cartype_dragster,cartype_fzero,cartype_pickup,cartype_ant
+	global	cartype_truck
+
+
+	global	m_mariokey,m_indynamics,m_testcar1
+	global	m_wheelgndoff
+
+	global	m_dynmem,m_objects
+
+	global	m_groupblocks
+	global	m_framec
+

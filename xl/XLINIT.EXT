@@ -1,0 +1,18 @@
+;--------------------------------------------------------------------
+;
+;	External file <xl_init>
+;
+;      			programed by Masato Kimura
+;
+;      			10/02/1993
+;--------------------------------------------------------------------
+;
+
+
+
+
+	global	initial_title
+	global	Initial_game
+	global	InitVRAM_l
+	global	DMA_transfer,DMA_transfer_l
+

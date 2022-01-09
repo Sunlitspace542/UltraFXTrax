@@ -1,0 +1,60 @@
+	global	coll_Istrat
+	global	hitflash_istrat
+	global	nocoll_istrat,makesplash_srou_l
+	global	makefire_srou_l,makesmoke_srou_l
+	global	initgame_strats_l,hard_istrat
+	global	float32_srou_l,float64_srou_l,float128_srou_l,float256_srou_l
+	global	select_ship_l,remove_Istrat
+
+	global	MAKESSPLASH_SROU_L
+	global	STAYDIST_ISTRAT			
+	global	HARDENEMY1_ISTRAT		
+	global	HARD180YR_ISTRAT		
+	global	HARD180YRNZR_ISTRAT		
+	global	STAYRELHARD180YR_ISTRAT		
+	global	INIT_STRATS_L			
+	global	CHKSTAGEDONE			
+	global	CHKBOSSDEAD			
+	global	CHKSTRATDONE2			
+	global	CHKSTRATDONE1			
+	global	KILL_ISTRAT			
+	global	MOVE_STRAT			
+	global	PWIRESHAPES			
+	global	STAYREL_iSTRAT
+	global	rockhard_Istrat
+	global	hardrot_Istrat
+	global	player_shapes
+	global	nocollanim0_Istrat
+	global	helpball_Istrat
+	global	delayremoverel_Istrat
+	global	delayremove_Istrat
+	global	pblackshapes
+	global	viewfloattab
+	global	viewfloattab_len
+	global	setYplayershape_l
+	global	remove_strat
+	global	stayrel_strat
+	global	CALCTEAMDAMAGE_L
+	global	chkobjsinmap 
+	global	relflatmiss_strat
+ 	global	boost_Istrat
+	global	updateengine_srou_l
+	global	makeengine_srou_l
+ 	global	gameoverinit_l
+
+	global	CALCBGSCROLL_L
+	global	printaw1_l
+	global	printaw2_l
+	global	printaw3_l
+	global	printab1_l
+	global	printab2_l
+	global	printab3_l
+	global	printab4_l
+	global	printab5_l
+	global	changeviewmode_l
+
+	global	createobj_l,makeplayer1_l,makeplayer2_l
+
+
+
+
