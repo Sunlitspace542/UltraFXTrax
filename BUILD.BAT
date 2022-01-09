@@ -16,7 +16,7 @@ del xl\status.doc
 del xl\lastasm.tmp
 del xl\msgs.txt
 del xl\alvars.txt
-copy sf\symbols.txt symbols.txt
-del sf\symbols.txt
+copy xl\symbols.txt symbols.txt
+del xl\symbols.txt
 pause
 exit
