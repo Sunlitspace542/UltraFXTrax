@@ -96,13 +96,13 @@ abort_vn
 
 	IFEQ	JANGLISH
 
-	db	"STAR FOX             "
-	db	$20,$13,$a,$0,$1,$1,$0,$ff,$ff,$0,$0
+	db	"FX TRAX              "
+	db	$20,$15,$a,$0,$1,$1,$0,$ff,$ff,$0,$0
 
 	ELSEIF
 
-	db	"STAR FOX             "
-	db	$20,$13,$a,$0,$0,$1,$0,$ff,$ff,$0,$0
+	db	"FX TRAX              "
+	db	$20,$15,$a,$0,$0,$1,$0,$ff,$ff,$0,$0
 
 	ENDC
 
