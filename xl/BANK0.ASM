@@ -15,6 +15,7 @@
 	include	mario.ext
 	include	mother.ext
 	include	xltrans.ext
+	include	sprites.ext
 	include	windows.ext
 
 
@@ -67,6 +68,11 @@ default_group_num	=	0
 
 Do_HDR	=	0
 
+
+;	incfile	d3strats.asm
+
+	public	bgandpcr
+	inccru	bgandpcr,data\and.pcr
 
 ResetEntry
 	jmp.l	ProgramEntry
