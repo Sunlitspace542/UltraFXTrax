@@ -55,10 +55,9 @@ hdmatabs.asm ramstuff.asm data\gfx\mist.col data\gfx\bg2-c.col \
 data\gfx\bg2-c.col data\gfx\over_d.col xlmain.asm xltrans.asm \
 game.asm windows.asm defspr.asm data\gfx\night.col \
 data\gfx\red.col data\gfx\blue.col coltab.asm light.asm \
-coltabs.asm bgs.asm sound.asm obj.asm \
+coltabs.asm obj.asm \
 sprites.asm mother.asm world.asm debug.asm \
-stratrou.asm draw.asm endseq.asm data\f-1.pcr \
-cont.asm 
+stratrou.asm draw.asm endseq.asm data\f-1.pcr 
 
 
 ## Bank 4
@@ -87,15 +86,15 @@ xldata\back1.pcg xldata\back1.psc
 
 ## Bank 8
 bank8.sob: bank8.asm \
-$(STDFILES) $(STRATFILES) gastrats.asm snd\sgbgmd.bin \
+$(STDFILES) $(STRATFILES) gastrats.asm \
 
 ## Bank 9
 bank9.sob: bank9.asm \
-$(STDFILES) snd\sgbgm11.bin 
+$(STDFILES)
 
 ## Bank 10
 bank10.sob: bank10.asm \
-$(STDFILES) $(STRATFILES) snd\sgbgml.bin 
+$(STDFILES) $(STRATFILES) 
 
 ## Bank 11
 bank11.sob: bank11.asm \
@@ -104,11 +103,11 @@ $(STDFILES) $(STRATFILES) pstrats.asm
 ## Banks 12, 13, 14, 15, 16, 17, 22
 shbanks.sob: shbanks.asm shmacs.inc stratequ.inc \
 $(STDFILES) mdynmacs.mc dynstructs.inc shapes.asm \
-rshapes.asm ashapes.asm snd\sgbgmm.bin a2shapes.asm \
-rshapes2.asm data\m.pcr snd\sgbgm2.bin afshapes.asm \
-snd\sgbgmn.bin a1shapes.asm awshapes.asm shapes2.asm \
-snd\sgbgmj.bin ajshapes.asm aushapes.asm af2shapes.asm \
-data\dog.ccr snd\sgbgm7.bin snd\sgbgm3.bin acshapes.asm \
+rshapes.asm ashapes.asm a2shapes.asm \
+rshapes2.asm data\m.pcr afshapes.asm \
+a1shapes.asm awshapes.asm shapes2.asm \
+ajshapes.asm aushapes.asm af2shapes.asm \
+acshapes.asm
 
 ## Banks 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31
 incbins.sob: incbins.asm \
@@ -125,14 +124,7 @@ data\cp.pcr data\t-st.ccr data\t-sp.ccr data\c-m.ccr \
 data\ti-3.ccr data\ti-3.pcr data\cont.ccr data\cont.pcr \
 data\cont-2.ccr data\cont-2.pcr data\ti-3-us.pcr data\ti-3-us.ccr \
 data\2-4.ccr data\cp.ccr data\face.cgx data\gfx\allcols.pac \
-data\m.ccr xlsnd\xlsnd0.bin snd\sgsound6.bin snd\sgsound6.bin \
-snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin \
-snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin snd\sgsound6.bin \
-snd\sgsound6.bin snd\sgbgma.bin snd\sgbgmb.bin snd\sgbgmc.bin \
-snd\sgbgmo.bin snd\sgbgme.bin snd\sgbgmf.bin snd\sgbgmg.bin \
-snd\sgbgmh.bin snd\sgbgmi.bin snd\sgbgmk.bin snd\sgbgmp.bin \
-snd\sgbgm1.bin snd\sgbgm4.bin snd\sgbgm5.bin snd\sgbgm6.bin \
-snd\sgbgm8.bin snd\sgbgm9.bin snd\sgbgm10.bin data\obj-2.ccr \
+data\m.ccr xlsnd\xlsnd0.bin data\obj-2.ccr \
 data\obj-3.ccr data\gfx\bg2-a.col data\gfx\bg2-b.col data\gfx\bg2-c.col \
 data\gfx\bg2-d.col data\gfx\bg2-e.col data\gfx\bg2-f.col data\gfx\bg2-g.col \
 data\gfx\t-m.col data\gfx\t-m-2.col data\gfx\t-m-3.col data\gfx\t-m-4.col \

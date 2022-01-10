@@ -15,10 +15,8 @@
 	include	shapes.ext
 	include	stratrou.ext
 	include	sgtabs.ext
-	include	bgs.ext
 	include	paths.ext
 	include	blink.ext
-	include	sound.ext
 	include	mdata.ext
 	include	endseq.ext
 	include	windows.ext

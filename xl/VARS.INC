@@ -1,4 +1,4 @@
-
+fast21mhz	equ	1	;21mhz mode off/on (0/1)
 
 cesdemo	equ	0	; 0 is normal, 1/2
 debuginfo	equ	1	; full strategy debugging

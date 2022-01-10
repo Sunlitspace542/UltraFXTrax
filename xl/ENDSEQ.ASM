@@ -1522,7 +1522,9 @@ titleredo	a8i16
 intro_l
 	a8i16
 
+	ifne	fast21mhz
 	fast
+	endc
 
 	lda	#1
 	sta.l	oncewipe

@@ -85,7 +85,6 @@ msprites3
 	endc
 
 	bank	23
-	inccru	dogpcr,data\dog.pcr
 	inccru	bgcppcr,data\cp.pcr
 	inccru	bgtstccr,data\t-st.ccr
 	inccru	bgtspccr,data\t-sp.ccr
@@ -118,40 +117,12 @@ facedata	inccolfile	data\face.cgx,0,360
 
 	bankend	23
 
+
 ;------------------------------------------------------------------
 
 firstsndbnk	=	24
 musicsize	=	0
 	incsnd	xlsnd0,xlsnd\xlsnd0.bin
-	incsnd	sound0,snd\sgsound6.bin
-	incsnd	sound1,snd\sgsound6.bin
-	incsnd	sound2,snd\sgsound6.bin
-	incsnd	sound3,snd\sgsound6.bin
-	incsnd	sound4,snd\sgsound6.bin
-	incsnd	sound5,snd\sgsound6.bin
-	incsnd	sound6,snd\sgsound6.bin
-	incsnd	sound7,snd\sgsound6.bin
-	incsnd	sound8,snd\sgsound6.bin
-	incsnd	sound9,snd\sgsound6.bin
-	incsnd	sounda,snd\sgsound6.bin
-	incsnd	bgma,snd\sgbgma.bin
-	incsnd	bgmb,snd\sgbgmb.bin
-	incsnd	bgmc,snd\sgbgmc.bin
-	incsnd	bgmo,snd\sgbgmo.bin
-	incsnd	bgme,snd\sgbgme.bin
-	incsnd	bgmf,snd\sgbgmf.bin
-	incsnd	bgmg,snd\sgbgmg.bin
-	incsnd	bgmh,snd\sgbgmh.bin
-	incsnd	bgmi,snd\sgbgmi.bin
-	incsnd	bgmk,snd\sgbgmk.bin
-	incsnd	bgmp,snd\sgbgmp.bin
-	incsnd	bgm1,snd\sgbgm1.bin
-	incsnd	bgm4,snd\sgbgm4.bin
-	incsnd	bgm5,snd\sgbgm5.bin
-	incsnd	bgm6,snd\sgbgm6.bin
-	incsnd	bgm8,snd\sgbgm8.bin
-	incsnd	bgm9,snd\sgbgm9.bin
-	incsnd	bgm10,snd\sgbgm10.bin
 
 	ifne	janglish
 	inccru	obj2ccr,data\obj-2.ccr
@@ -167,53 +138,3 @@ musicsize	=	0
 	PRINTF	"%N%N  MORE THAN 8 MEGA-BITS OF ROM USED!! %N%N"
 	FAIL
 	endc
-
-
-	fileslog	data\gfx\bg2-a.col
-	fileslog	data\gfx\bg2-b.col
-	fileslog	data\gfx\bg2-c.col
-	fileslog	data\gfx\bg2-d.col
-	fileslog	data\gfx\bg2-e.col
-	fileslog	data\gfx\bg2-f.col
-	fileslog	data\gfx\bg2-g.col
-	fileslog	data\gfx\t-m.col
-	fileslog	data\gfx\t-m-2.col
-	fileslog	data\gfx\t-m-3.col
-	fileslog	data\gfx\t-m-4.col
-	fileslog	data\gfx\b-m.col
-	fileslog	data\gfx\light.col
-	fileslog	data\gfx\space.col
-	fileslog	data\gfx\stars.col
-	fileslog	data\gfx\cp.col
-	fileslog	data\gfx\cp-us.col
-	fileslog	data\gfx\hole.col
-	fileslog	data\gfx\l.col
-	fileslog	data\gfx\e-test0.col
-	fileslog	data\gfx\e-test.col
-	fileslog	data\gfx\obj-1.col
-
-
-
-bg22pcr
-bglsbccr
-bgf1ccr
-bgbholeccr
-bgtfspcr
-bg23pcr
-bg23bpcr
-mappcr
-bgstarspcr
-bg32pcr
-bg13bpcr
-bg13pcr
-bg14pcr
-bg14ccr
-bg33pcr
-bg34pcr
-bglsbpcr
-fobjccr
-bgbholepcr
-bgholeapcr
-bgtsppcr
-bg24pcr
-bgtstpcr

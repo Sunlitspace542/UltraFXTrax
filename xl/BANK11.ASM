@@ -2,7 +2,6 @@
 	include	strathdr.inc
 	include	gstrats.ext
 	include	windows.ext
-	include	bootnmi.ext
 	include	gastrats.ext
 
 	bank	11

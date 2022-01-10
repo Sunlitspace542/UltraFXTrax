@@ -7,11 +7,9 @@
 	include	pstrats.ext
 	include	incbins.ext
 	include	fontdata.ext
-	include	bgs.ext
 	include	planets.ext
 	include	ramstuff.ext
 	include	irq.ext
-	include	bootnmi.ext
 	include	mdata.ext
 	include	continue.ext
 	include	coltabs.ext

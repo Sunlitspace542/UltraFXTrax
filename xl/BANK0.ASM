@@ -12,10 +12,8 @@
 	include	game.ext
 	include	world.ext
 	include	draw.ext
-;	include	blink.ext
 	include	mario.ext
 	include	mother.ext
-	include	sound.ext
 	include	xltrans.ext
 	include	sprites.ext
 	include	windows.ext
@@ -25,7 +23,6 @@
 	include	pstrats.ext
 
 	include	coltabs.ext
-	include	bootnmi.ext
 	include	colboxes.ext
 	include	mem.ext
 	include	endseq.ext

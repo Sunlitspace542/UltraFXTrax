@@ -6,7 +6,6 @@
 	include	bgmacs.inc
 	include	maps\maplist.ext
 	include	marioi.inc
-	include	bootnmi.ext
 	include	gastrats.ext
 	
 
@@ -15,8 +14,6 @@
 ;------------------------------------------------------------------
 	bank	6
 	incfile	gstrats.asm
-;	incfile	gcstrats.asm
-;	incfile	expstrat.asm
 
 cacheon	=	1
      	incfile	mmacs.mc

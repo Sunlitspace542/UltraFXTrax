@@ -14,7 +14,6 @@
 	include	blink.ext
 	include	mario.ext
 	include	mother.ext
-	include	sound.ext
 	include	xltrans.ext
 	include	sprites.ext
 

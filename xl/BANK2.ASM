@@ -43,11 +43,8 @@ scr_offset	equ	(vchr_logback-vchr_physback)/16
 
 	extern	bgandpcr
 	extern	bgandccr
-	extern	dogccr
 	extern	bgml	
 	extern	bgmllen	
-	extern	bgmd	
-	extern	bgmdlen	
 	extern	bgm11	
 	extern	bgm11len
 
@@ -87,16 +84,8 @@ planetdmapos2	dw	100
 	minfo
 	incfile	coltabs.asm
 	minfo	coltabs
-;	incfile	bgs.asm
-;	minfo	bgs
-;	incfile	sound.asm
-;	minfo	sound
 	incfile	obj.asm
  	minfo	obj
-;	incfile	planets.asm
-;	minfo	planets
-;	incfile	sprites.asm
-;	minfo	sprites
 	incfile	world.asm
 	minfo	world
 	bankend	3
@@ -105,18 +94,12 @@ planetdmapos2	dw	100
 	minfo
 	incfile	debug.asm
 	minfo	<debug>
-;	incfile	bootnmi.asm
-;	minfo	bootnmi
 	incfile	stratrou.asm
 	minfo	<stratrou>
-;	incfile	nmi.asm
-;	minfo	nmi
 	incfile	draw.asm
 	minfo	draw
 	incfile	endseq.asm
 	inccru	bgf1pcr,data\f-1.pcr
-;	incfile	cont.asm
-;	minfo	cont
 	bankend	31
 ;------------------------------------------------------------------
 

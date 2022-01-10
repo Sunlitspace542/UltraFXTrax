@@ -9,7 +9,6 @@
 	include	ramstuff.ext
 	include incbins.ext
 	include	endseq.ext
-	include	bgs.ext
 	include	coltabs.ext
 	include	marioi.inc
 	include	mkmacs.inc
