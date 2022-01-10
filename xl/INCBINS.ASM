@@ -33,7 +33,6 @@ msprites3
 	bankend	20
 
 	bank	21
-	inccru	bgspaceccr,data\space.ccr
 	inccru	bglastpcr,data\last.pcr
 	inccru	bgfsbg3ccr,data\fs-bg3.ccr
 	inccru	bgfsnipcr,data\fs-ni.pcr
