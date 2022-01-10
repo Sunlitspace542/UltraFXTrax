@@ -33,11 +33,6 @@ real_istrats =	0
 ;------------------------------------------------------------------
 	bank	5
 	incfile	maps\maplist.asm
-
-	public	bgandccr
-	inccru	bgandccr,data\and.ccr
-
-
 	bankend	5
 ;------------------------------------------------------------------
 	bank	13

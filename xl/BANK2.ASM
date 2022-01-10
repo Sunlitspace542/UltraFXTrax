@@ -41,13 +41,6 @@
 
 scr_offset	equ	(vchr_logback-vchr_physback)/16
 
-	extern	bgandpcr
-	extern	bgandccr
-	extern	bgml	
-	extern	bgmllen	
-	extern	bgm11	
-	extern	bgm11len
-
 ;-------------------------------------------------------
 	bank	2
 	ifne	*-$28000

@@ -35,8 +35,7 @@ data\etabs.dat sgtabs.asm data\nintendo.pal data\map-obj.cgx \
 sgdata.asm data\arctan.asm istrats.asm shapes.asm \
 shapes2.asm ashapes.asm a2shapes.asm afshapes.asm \
 af2shapes.asm a1shapes.asm ajshapes.asm aushapes.asm \
-acshapes.asm rshapes.asm rshapes2.asm awshapes.asm \
-data\and.pcr 
+acshapes.asm rshapes.asm rshapes2.asm awshapes.asm
 
 
 ## Bank 1
@@ -68,7 +67,7 @@ $(STDFILES) $(STRATFILES)
 bank5.sob: bank5.asm mapmacs.inc istrats.asm \
 $(STDFILES) mdynmacs.mc dynstruct.inc maps\test1.asm \
 maps\test2.asm maps\test3.asm maps\test4.asm maps\maplist.asm \
-data\and.ccr maps\MAPP.asm maps\maplist2.asm 
+maps\MAPP.asm maps\maplist2.asm 
 
 ## Bank 6
 bank6.sob: bank6.asm \
@@ -113,17 +112,16 @@ acshapes.asm
 incbins.sob: incbins.asm \
 $(STDFILES) msprites\sprites1.dat msprites\sprites2.dat data\moji_2.fon \
 mdata.mc data\demo.ccr data\demo.pcr data\hole-a.ccr \
-data\b.ccr data\b.pcr data\obj-1.ccr data\e-test.ccr \
+data\obj-1.ccr data\e-test.ccr \
 data\e-test.pcr data\e-test2.ccr data\e-test2.pcr data\fox.ccr \
-data\fox.pcr data\b-m.ccr data\st-p.ccr data\2-3h.pcr \
-data\st-p.pcr data\2-2.ccr data\2-3.ccr data\2-3b.ccr \
-data\stars.ccr data\1-3-b.ccr data\space.ccr data\last.pcr \
-data\3-2.ccr data\fs-bg3.ccr data\3-3.ccr data\map.ccr \
-data\fs-ni.pcr data\t-ss.pcr data\3-4.ccr data\dog.pcr \
+data\fox.pcr data\b-m.ccr \
+data\space.ccr data\last.pcr \
+data\fs-bg3.ccr data\map.ccr \
+data\fs-ni.pcr data\t-ss.pcr \
 data\cp.pcr data\t-st.ccr data\t-sp.ccr data\c-m.ccr \
-data\ti-3.ccr data\ti-3.pcr data\cont.ccr data\cont.pcr \
-data\cont-2.ccr data\cont-2.pcr data\ti-3-us.pcr data\ti-3-us.ccr \
-data\2-4.ccr data\cp.ccr data\face.cgx data\gfx\allcols.pac \
+data\cont.ccr data\cont.pcr \
+data\cont-2.ccr data\cont-2.pcr \
+data\cp.ccr data\face.cgx data\gfx\allcols.pac \
 data\m.ccr xlsnd\xlsnd0.bin data\obj-2.ccr \
 data\obj-3.ccr data\gfx\bg2-a.col data\gfx\bg2-b.col data\gfx\bg2-c.col \
 data\gfx\bg2-d.col data\gfx\bg2-e.col data\gfx\bg2-f.col data\gfx\bg2-g.col \
