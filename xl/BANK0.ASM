@@ -15,7 +15,6 @@
 	include	mario.ext
 	include	mother.ext
 	include	xltrans.ext
-	include	sprites.ext
 	include	windows.ext
 
 

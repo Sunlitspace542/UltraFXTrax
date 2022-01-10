@@ -56,7 +56,7 @@ data\gfx\bg2-c.col data\gfx\over_d.col xlmain.asm xltrans.asm \
 game.asm windows.asm defspr.asm data\gfx\night.col \
 data\gfx\red.col data\gfx\blue.col coltab.asm light.asm \
 coltabs.asm obj.asm \
-sprites.asm mother.asm world.asm debug.asm \
+mother.asm world.asm debug.asm \
 stratrou.asm draw.asm endseq.asm data\f-1.pcr 
 
 
