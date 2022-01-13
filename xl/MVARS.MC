@@ -302,14 +302,14 @@ m_clipright	equ	m_sprxmax
 mmaxxpos	=	224
 mmaxypos	=	192
 
-mmaxpnts	=	70	; was 80
+mmaxpnts	=	128	; was 80
 mmaxpolysize	=	128
 mmaxgroups	=	16
 mmaxstack	=	256
 mmaxbsp		=	40	; was 64
 mmaxdust	=	1			120
 mmaxdrawlist	=	dl_sizeof*number_drawal
-mmaxvistab	=	100	; was 128
+mmaxvistab	=	128	; was 128
 
 
 	malc	m_meters,2
@@ -330,22 +330,22 @@ mmaxvistab	=	100	; was 128
 	malc	m_bsplist,mmaxbsp
 	malc	m_zbuf,mmaxgroups
 	malc	m_uvlist2,0
-	malc	m_dustpnts,6*mmaxdust
-	malc	m_intpnts,mmaxpnts
+	malc	m_dustpnts,0
+	malc	m_intpnts,0
 	malc	m_vistab,mmaxvistab
 	malc	m_drawlist,mmaxdrawlist
 
 	malc	rtest3,2
 
 
-	malc	m_scuptab,mmaxypos*2
-	malc	m_scdwntab,mmaxypos*2
+	malc	m_scuptab,0
+	malc	m_scdwntab,0
 
 	malc	m_planetstars,2
 	malc	m_particlesON,2
 	malc	m_defaultID,2
 
-	malc	m_debugchars,8*16	; always last!
+	malc	m_debugchars,0	; always last!
 
 ;----------------------------------------------------------
 ; dynamic allocs.
