@@ -302,14 +302,14 @@ m_clipright	equ	m_sprxmax
 mmaxxpos	=	224
 mmaxypos	=	192
 
-mmaxpnts	=	128	; was 80
-mmaxpolysize	=	128
+mmaxpnts	=	150	; was 80
+mmaxpolysize	=	150
 mmaxgroups	=	16
 mmaxstack	=	256
 mmaxbsp		=	40	; was 64
 mmaxdust	=	1			120
 mmaxdrawlist	=	dl_sizeof*number_drawal
-mmaxvistab	=	128	; was 128
+mmaxvistab	=	150	; was 128
 
 
 	malc	m_meters,2

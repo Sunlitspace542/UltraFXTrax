@@ -115,7 +115,7 @@ padl_RIGHT	equ	pad_RIGHT
 NULL	equ	0
 
 ;Game limit vars --------------------------------------
-number_al	equ	70*2	;Max aliens
+number_al	equ	70	;Max aliens
 number_drawal	equ	70
 number_zb	equ	70	;Max z srot blocks
 
