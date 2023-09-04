@@ -6,6 +6,9 @@ ASMFLAGS=-efilelist=0 -xsymbols.txt
 include symson.mak
 LINK=ARGLINK
 LOPTS=-b30 -h512 -t7d
+EXTEND=EXTEND
+CHECK=SFCHECK
+COPTS=-s -f
 ANSI=
 
 ALLFILES= bank0.sob bank1.sob bank2.sob \
@@ -24,6 +27,8 @@ finished.sg: $(ALLFILES)
 
 xl.rom: $(ALLFILES)
 	@$(LINK) $(LOPTS) -oxl.rom @flist
+    @$(EXTEND) xl.rom
+	@$(CHECK) $(COPTS) xl.rom
 
 info: $(ALLFILES)
 	@$(LINK) $(LOPTS) -l1024 @flist

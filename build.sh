@@ -1,1 +1,1 @@
-dosbox-x BUILD.BAT && python3 romExtender_linux.py XLBUILT.SFC && ./superfamicheck_linux -f XLBUILT.SFC
+dosbox-x BUILD.BAT
